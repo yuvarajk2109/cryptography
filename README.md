@@ -1,7 +1,5 @@
 # Cryptography Hub
 
----
-
 1. Traditional Cryptographic Algorithms
    1. Caesar Cipher
    2. Affine Cipher
