@@ -1,4 +1,4 @@
-## Cryptography
+## Algorithms
 
 1. Caesar Cipher
 2. Affine Cipher
