@@ -1,9 +1,9 @@
 # Cryptography Hub
 
-### Console-Based Client-Server Encrypted Applications
+### 1. Console-Based Client-Server Encrypted Applications
 
-### Mathematical Theorems
+### 2. Mathematical Theorems
 
-### Message Integrity
+### 3. Message Integrity
 
-### Digital Signature
+### 4. Digital Signature
