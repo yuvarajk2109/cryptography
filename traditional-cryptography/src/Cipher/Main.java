@@ -50,49 +50,49 @@ public class Main {
     }
 
     public static String encrypt(String message) throws IOException {
-        String encrypted = "";
-        switch (METHOD) {
-            case 1:
+        String encrypted = switch (METHOD) {
+            case 1 -> {
                 Caesar c = new Caesar();
-                encrypted = c.encrypt(message);
-                break;
-            case 2:
+                yield c.encrypt(message);
+            }
+            case 2 -> {
                 Affine a = new Affine();
-                encrypted = a.encrypt(message);
-                break;
-            case 3:
+                yield a.encrypt(message);
+            }
+            case 3 -> {
                 Playfair p = new Playfair();
-                encrypted = p.encrypt(message);
-                break;
-            case 4:
+                yield p.encrypt(message);
+            }
+            case 4 -> {
                 Monoalphabetic m = new Monoalphabetic();
-                encrypted = m.encrypt(message);
-                break;
-            case 5:
+                yield m.encrypt(message);
+            }
+            case 5 -> {
                 Vigner pa = new Vigner();
-                encrypted = pa.encrypt(message);
-                break;
-            case 6:
+                yield pa.encrypt(message);
+            }
+            case 6 -> {
                 Autokey ak = new Autokey();
-                encrypted = ak.encrypt(message);
-                break;
-            case 7:
+                yield ak.encrypt(message);
+            }
+            case 7 -> {
                 Hill h = new Hill();
-                encrypted = h.encrypt(message);
-                break;
-            case 8:
+                yield h.encrypt(message);
+            }
+            case 8 -> {
                 Rail_Fence rf = new Rail_Fence();
-                encrypted = rf.encrypt(message);
-                break;
-            case 9:
+                yield rf.encrypt(message);
+            }
+            case 9 -> {
                 Row_Transposition rt = new Row_Transposition();
-                encrypted = rt.encrypt(message);
-                break;
-            case 10:
+                yield rt.encrypt(message);
+            }
+            case 10 -> {
                 SimplifiedDES des = new SimplifiedDES();
-                encrypted = des.encrypt(message);
-                break;
-        }
+                yield des.encrypt(message);
+            }
+            default -> "";
+        };
         return encrypted;
     }
 
